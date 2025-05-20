@@ -10,7 +10,13 @@ public class App {
         int num2 = Integer.parseInt(Dato2);
         int num3 = Integer.parseInt(Dato3);
 
-        
+        int promedio = (num1 + num2 + num3) / 3;
+
+        JOptionPane.showMessageDialog(null, "El promedio es: " + promedio);
+
+
+
+         System.out.println(Integer.parseInt(Dato1));
 
          
         
