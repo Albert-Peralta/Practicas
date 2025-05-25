@@ -15,7 +15,14 @@ public class App {
             }
         }
 
-        
+        for (int i = 0; i < 5; i++) {
+            String mensaje = "Nombre: " + estudiantes[i].getNombre() + "\n"
+                           + "Matrícula: " + estudiantes[i].getMatricula() + "\n"
+                           + "Promedio: " + estudiantes[i].calcularPromedio() + "\n"
+                           + "¿Aprobado?: " + (estudiantes[i].aprobado() ? "Sí" : "No");
+
+            JOptionPane.showMessageDialog(null, mensaje, "Resultado del Estudiante " + (i + 1), JOptionPane.INFORMATION_MESSAGE);
+        }
        
     }
 }
