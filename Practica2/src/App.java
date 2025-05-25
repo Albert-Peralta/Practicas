@@ -16,8 +16,6 @@ public class App {
         sq.setarea(10);
         System.out.println(sq.getArea());
 
-
-
         circle cir = new circle();
         cir.setradio(5);
         System.out.println(cir.getradio());
