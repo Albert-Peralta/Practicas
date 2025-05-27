@@ -16,8 +16,7 @@ public class App {
 
             JOptionPane.showMessageDialog(null, "Titular: "+ cb.getTitular()
             +"\n"+"¿Primer retiro?: " + retiro1+"\n"+cb.getSaldo()
-            +"\n"+"¿Segundo retiro?: " + retiro2+"\n"+cb.getSaldo()
-            );
+            +"\n"+"¿Segundo retiro?: " + retiro2+"\n"+cb.getSaldo() );
 
     }
 }

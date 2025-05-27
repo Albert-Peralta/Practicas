@@ -54,6 +54,4 @@ public class CuentaBancaria {
         this.saldo = saldo;
     }
 
-    
-
 }
