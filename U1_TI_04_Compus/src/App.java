@@ -9,8 +9,7 @@ public class App {
         pc.setModelo("2024");
         pc.encender();
         String estado = pc.isEncendida() ? "encendida" : "apagada";
-        JOptionPane.showMessageDialog(null, 
-            "La computadora " + pc.getMarca() + " " + pc.getModelo() + " está " + estado + ".");
+        JOptionPane.showMessageDialog(null,  "La computadora " + pc.getMarca() + " " + pc.getModelo() + " está " + estado + ".");
         pc.apagar();   
         
     }
