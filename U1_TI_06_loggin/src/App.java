@@ -13,13 +13,26 @@ public class App {
 
         UsuarioSeguro us = new UsuarioSeguro();
 
-
-        String nombreUsuario = JOptionPane.showInputDialog("Ingrese su nombre: ");
+        //String nombreUsuario = JOptionPane.showInputDialog("Ingrese su nombre: ");
+        String nombreUsuario;
+        do {nombreUsuario = JOptionPane.showInputDialog("Ingrese su nombre: ");
+            if (nombreUsuario == null || nombreUsuario.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "El nombre de usuario no puede estar vacío.");
+        }
+        } while (nombreUsuario == null || nombreUsuario.isEmpty());
         us.setNombreUsuario(nombreUsuario);
-        String password = JOptionPane.showInputDialog("Ingrese su contraseña: ");        
+
+       // String password = JOptionPane.showInputDialog("Ingrese su contraseña: ");
+        String password;
+        do { password = JOptionPane.showInputDialog("Ingrese su contraseña: ");
+        if (password.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "La contraseña no puede estar vacío.");
+        }
+        } while (password.isEmpty());
         us.setPassword(password);
 
         us.autenticar(password);
+        
 
     }
 }
