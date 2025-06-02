@@ -10,7 +10,7 @@ public class App {
         FigureAbs sq = new Square(10);
         FigureAbs cir = new Circle(10);
         FigureAbs triangle = new Triangle(20, 25, 20);
-        FigureAbs trirec = new triangleRec(10, 15, 8, 8);
+        FigureAbs trirec = new triangleRec(15, 20, 8, 8, 10);
         FigureAbs triequi = new TriangleEqui(10, 15, 8);
 
         FigureAbs[] figures = { sq, cir, triangle, trirec, triequi };

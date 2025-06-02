@@ -7,11 +7,11 @@ public class triangleRec extends FigureAbs {
     private double cateto2;
     private double hipotenusa;
 
-    public triangleRec(double base, double height, double cateto, double hipotenusa) {
+    public triangleRec(double base, double height, double cateto1, double cateto2, double hipotenusa) {
         this.base = base;
         this.height = height;
-        this.cateto1 = cateto;
-        this.cateto2 = cateto;
+        this.cateto1 = cateto1;
+        this.cateto2 = cateto2;
         this.hipotenusa = hipotenusa;
     }
 
@@ -57,7 +57,7 @@ public class triangleRec extends FigureAbs {
 
     @Override
     public double getArea() {
-        return 1 / 2 * (base*height);
+        return (base * height) / 2;
     }
 
     @Override
