@@ -1,4 +1,4 @@
-module com.example.holamundojavafx {
+module com.example.formulario {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,6 +6,6 @@ module com.example.holamundojavafx {
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
 
-    opens com.example.holamundojavafx to javafx.fxml;
-    exports com.example.holamundojavafx;
+    opens com.example.formulario to javafx.fxml;
+    exports com.example.formulario;
 }
